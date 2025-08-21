@@ -1,0 +1,56 @@
+.binary-rain-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 5;
+  background: transparent;
+  opacity: 0.96;
+}
+
+/* Add subtle animation to the entire canvas */
+.binary-rain-canvas {
+  animation: subtleGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes subtleGlow {
+  0% {
+    opacity: 0.84;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .binary-rain-canvas {
+    opacity: 0.84;
+  }
+
+  @keyframes subtleGlow {
+    0% {
+      opacity: 0.72;
+    }
+    100% {
+      opacity: 0.96;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .binary-rain-canvas {
+    opacity: 0.72;
+  }
+
+  @keyframes subtleGlow {
+    0% {
+      opacity: 0.72;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

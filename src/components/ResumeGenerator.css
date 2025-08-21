@@ -1,0 +1,169 @@
+.resume-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.resume-header {
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #333;
+  padding-bottom: 20px;
+}
+
+.resume-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+.contact-info span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.resume-section {
+  margin-bottom: 25px;
+}
+
+.resume-section h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #2c3e50;
+  border-bottom: 1px solid #bdc3c7;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.education-item, .internship-item, .project-item, .activity-item {
+  margin-bottom: 20px;
+}
+
+.education-header, .internship-header, .project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.education-header h3, .internship-header h3, .project-header h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #34495e;
+  margin: 0;
+}
+
+.education-header span, .internship-header span, .project-header span {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  font-weight: normal;
+}
+
+.internship-item ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.internship-item li {
+  margin-bottom: 10px;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.skill-category {
+  margin-bottom: 10px;
+}
+
+.skill-category h4 {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.skill-category p {
+  margin: 0;
+  color: #555;
+}
+
+.activity-item h4 {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.print-btn {
+  background: linear-gradient(135deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+.print-btn:hover {
+  background: linear-gradient(135deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+}
+
+/* Print styles */
+@media print {
+  .resume-container {
+    box-shadow: none;
+    padding: 20px;
+    margin: 0;
+    max-width: none;
+  }
+  
+  .print-btn {
+    display: none;
+  }
+  
+  .resume-section {
+    page-break-inside: avoid;
+  }
+  
+  .contact-info {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 20px;
+  }
+  
+  .resume-header h1 {
+    font-size: 2rem;
+  }
+  
+  .contact-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .education-header, .internship-header, .project-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
