@@ -44,7 +44,7 @@ const Hero = () => {
               className="hero-subtitle"
               variants={itemVariants}
             >
-              Java Developer & Full Stack Engineer
+             Full Stack Engineer
             </motion.h2>
             
             <motion.p 
