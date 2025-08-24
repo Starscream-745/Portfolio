@@ -29,7 +29,7 @@ const Projects = () => {
         { name: "HTML/CSS", icon: FaReact, color: "#61dafb" }
       ],
       github: "https://github.com/Starscream-745/reservation-system",
-      live: "https://kushagra-reservation.vercel.app",
+  
       featured: true
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
         { name: "Console", icon: FaDatabase, color: "#4479a1" }
       ],
       github: "https://github.com/Starscream-745/ATM_Automated_Teller_Machine",
-      live: "https://github.com/Starscream-745/ATM_Automated_Teller_Machine"
+    
     },
     {
       title: "Library Management System",
@@ -55,7 +55,7 @@ const Projects = () => {
         { name: "File I/O", icon: FaDatabase, color: "#667eea" }
       ],
       github: "https://github.com/Starscream-745/Library_Management_System",
-      live: "https://github.com/Starscream-745/Library_Management_System"
+  
     },
     {
       title: "DSA Visualizer",
@@ -67,8 +67,8 @@ const Projects = () => {
         { name: "JavaScript", icon: FaReact, color: "#f7df1e" },
         { name: "Algorithms", icon: FaDatabase, color: "#ff6b6b" }
       ],
-      github: "https://github.com/Starscream-745/dsa-visualizer",
-      live: "https://github.com/Starscream-745/dsa-visualizer"
+      github: "https://github.com/Starscream-745/Sorting_Visualizer",
+     
     }
   ];
 
