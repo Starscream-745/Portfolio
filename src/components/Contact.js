@@ -382,7 +382,7 @@ const Contact = () => {
       >
         <div className="container">
           <p>
-            &copy; 2024 Kushagra Tyagi. Built with React & passion for
+            &copy; 2025 Kushagra Tyagi. Built with React & passion for
             innovation.
           </p>
         </div>
